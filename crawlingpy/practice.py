@@ -187,8 +187,139 @@
 #   t += 1
 
 # 6075
-n = int(4)
+# n = int(4)
+# i = 0
+# while i <= n:
+#     print(i)
+#     i += 1
 
-while n >= 0 and n <= 100:
-    n += n
-    print(n)
+
+# 6076
+# n = int(4)
+# for i in range(n+1):
+#     print(i)
+
+
+# 6077
+# 짝수의 합 구하기
+# n = int(5)
+# s = 0
+# for i in range(1, n+1):
+#     if i % 2 == 0:
+#         s += i
+# print(s)
+
+
+# 6078
+# while True:
+#     x = input()
+#     print(x)
+#     if x == 'q':
+#         break
+
+
+# 6079
+# n = int(1000)
+# s = 0
+# t = 0
+# while s < n:
+#     t = t+1
+#     s = s+t
+# print(t)
+
+
+# 6080
+# n, m = map(int, input().split())
+# n = 2
+# m = 3
+# for i in range(1, n + 1):
+#     for j in range(1, m + 1):
+#         print(i, j)
+
+
+# 6081
+# n = int('F', 16)
+# for i in range(1, 16):
+#     print('%X' % n, '*%X' % i, '=%X' % (n*i), sep='')
+
+
+# 6082
+# n = int(30)
+# for i in range(1, n+1):
+#     if i % 10 == 3 or i % 10 == 6 or i % 10 == 9:
+#         print("X", end=' ')
+
+#     else:
+#         print(i, end=' ')
+
+
+# 6083
+# r, g, b = map(int, input().split())
+# for i in range(r):
+#     for j in range(g):
+#         for k in range(b):
+#             print(i, j, k)
+
+# print(r*g*b)
+
+
+# 6084
+# h, b, c, s = map(int, input().split())
+
+# m = (h * b * c * s)/8/1024/1024
+
+# print('%.1f MB' % m)
+
+
+# 6085
+# w, h, b = map(int, input().split())
+
+# m = (w * h * b)/8/1024/1024
+
+# print('%.1f MB' % m)
+
+
+# 6086
+# n = int(57)
+# c = 0
+# s = 0
+# while True:
+#     s += c
+#     c += 1
+#     if s >= n:
+#         break
+
+# print(s)
+
+
+# 6087
+# n = int(10)
+
+# for i in range(1, n+1):
+#     if i % 3 == 0:
+#         continue
+#     print(i, end=' ')
+
+
+# 6088
+# a = int(1)
+# d = int(3)
+# n = int(5)
+
+# for i in range(1, n):
+#     a = a + d
+#     print(a)
+
+
+# 6089
+# a = int(2)
+# r = int(3)
+# n = int(7)
+
+# for i in range(1, n):
+#     a *= r
+
+# print(a)
+
+
+# 6090
