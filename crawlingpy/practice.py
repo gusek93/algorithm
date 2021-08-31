@@ -323,3 +323,152 @@
 
 
 # 6090
+# a = int(1)
+# m = int(-2)
+# d = int(1)
+# n = int(8)
+
+# for i in range(1, n):
+#     a = a * m + d
+# print(a)
+
+
+# 6091
+# 최소 공배수 구하는 문제
+# a = int(3)
+# b = int(7)
+# c = int(9)
+# d = int(1)
+
+# while d % a != 0 or d % b != 0 or d % c != 0:
+#     d = d + 1
+
+# print(d)
+
+
+# 6092
+# n= int(input())
+# a=list(map(int,input().split()))
+# d=[]
+# for i in range(24):
+#     d.append(0)
+# for i in range(n):
+#     d[a[i]]+=1
+# for i in range(1,24):
+#     print(d[i],end=' ')
+
+
+# 6093
+# n = int(input())
+# a = input().split()
+
+# for i in range(n):
+#     a[i] = int(a[i])
+
+# for i in range(n-1, -1, -1):
+#     print(a[i], end=' ')
+
+
+# 6094
+# 리스트 최소값 출력
+# n = int(input())
+# k = map(int, input().split())
+# a = min(k)
+
+# print(a)
+
+
+# 6095
+# 2차원 배열 문제
+# d = []
+# for i in range(20):
+#     d.append([])
+#     for j in range(20):
+#         d[i].append(0)
+
+# n = int(input())
+# for i in range(n) :
+#     x, y = input().split()
+#     d[int(x)][int(y)] = 1
+
+# for i in range(1, 20):
+#     for j in range(1,20):
+#         print(d[i][j], end= ' ')
+#     print()
+
+
+# 6096
+# a = [[]*19 for _ in range(19)]
+# for i in range(19):
+#    a[i]=list(map(int,input().split()))
+
+# n = int(input())
+
+# for i in range(n):
+#     b,c=map(int,input().split())
+
+#     for j in range(19):
+#         if(a[b-1][j]==1):
+#             a[b-1][j]=0
+#         else: a[b-1][j]=1
+
+#     for j in range(19):
+#         if(a[j][c-1]==1):
+#             a[j][c-1]=0
+#         else: a[j][c-1]=1
+
+# for i in range(19):
+#     for j in range(19):
+#         print(a[i][j],end=' ')
+#     print()
+
+
+# 6097
+# h,w = map(int,input().split())
+# n = int(input())
+
+# board=[[0]*w for _ in range(h)]
+
+# for i in range(n):
+#     l,d,x,y = map(int,input().split())
+#     if(d==0):
+#         for j in range(l):
+#             board[x-1][y-1+j]=1
+#     else:
+#         for j in range(l):
+#             board[x-1+j][y-1]=1
+
+
+# for i in range(h):
+#     for j in range(w):
+#         print(board[i][j],end=' ')
+#     print()
+
+
+# 6098
+# board=[[]*10 for _ in range(10)]
+# for i in range(10):
+#     board[i]=list(map(int,input().split()))
+# x=1
+# y=1
+# board[x][y]=9
+
+# while True:
+#     if(board[x][y]==2):
+#         board[x][y]=9
+#         break
+#     if(board[x][y+1]!=1):
+#         board[x][y]=9
+#         y+=1
+#     else:
+#         if(board[x+1][y]!=1):
+#             board[x][y]=9
+#             x+=1
+#         else:
+#           board[x][y]=9
+#           break
+
+# for i in range(10):
+#     for j in range(10):
+#         print(board[i][j],end=' ')
+#     print()
