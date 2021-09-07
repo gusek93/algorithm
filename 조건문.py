@@ -505,3 +505,126 @@
 
 # else:
 #     print('lose')
+
+
+# 1224
+# a = int(1)
+# b = int(2)
+# c = int(3)
+# d = int(4)
+
+# if a / b > c / d:
+#     print('>')
+
+# elif a / b == c / d:
+#     print('=')
+
+# else:
+#     print('<')
+
+
+# 1226
+# 문자열 비교 방법 set(), difference 구하기
+# List1 = [13, 12, 40, 41, 42, 45]
+# bonus = [7]
+# List2 = [2, 6, 7, 23, 40, 44]
+# SetList1 = set(List1)
+# SetList2 = set(List2)
+# SetList3 = set(bonus)
+
+# # print(SetList2.difference(SetList1))
+# result = len(SetList1.difference(SetList2))
+# result2 = len(SetList2.difference(bonus))
+
+# if result == 0:
+#     print(1)
+
+# elif result == 1 and result2 == 5:
+#     print(2)
+
+# elif result == 1 and result2 == 6:
+#     print(3)
+
+# elif result == 2:
+#     print(4)
+
+# elif result == 3:
+#     print(5)
+
+# else:
+#     print(0)
+
+
+# 1228
+# cm = float(170.0)
+# kg = float(80.0)
+
+# globalkg = (cm - 100) * 0.9
+# ddung = (kg - globalkg) * 100 / globalkg
+
+# if ddung <= 10:
+#     print('정상')
+
+# elif 10 < ddung <= 20:
+#     print('과체중')
+
+# else:
+#     print('비만')
+
+
+# 1229
+# h = float(150)
+# w = float(60)
+
+# if h < 150:
+#     resulth = (h - 100)
+
+# elif 150 <= h < 160:
+#     resulth = (h - 150)/2 + 50
+
+# else:
+#     resulth = (h - 100) * 0.9
+
+
+# ddung = (w - resulth) * 100 / resulth
+
+# if ddung <= 10:
+#     print('정상')
+
+# elif 10 < ddung <= 20:
+#     print('과체중')
+
+# else:
+#     print('비만')
+
+
+# 1230
+# a = int(171)
+# b = int(168)
+# c = int(165)
+
+# list = [a, b, c]
+# list.sort()
+
+
+# if a <= 170:
+#     print('CRASH', a)
+
+
+# elif b <= 170:
+#     print('CRASH', b)
+
+# elif c <= 170:
+#     print('CRASH', c)
+
+# else:
+#     print('PASS')
+
+
+# 1231
+# 문자열에서 연산값을 출력 해주는 eval(), 소수점 자리수 출력 하는 round()
+# a = '20+7'
+
+# result = round(eval(a), 2)
+
+# print(result)
