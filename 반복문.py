@@ -134,8 +134,8 @@
 
 
 # 1266
-#n = int(input())
-#numbers = list(map(int, input().split()))
+# n = int(input())
+# numbers = list(map(int, input().split()))
 # numbers = [3, 5, 7, 7, 2]
 # total = int(0)
 
@@ -170,15 +170,215 @@
 
 
 # 1269
-a = 2
-b = -1
-c = 3
-n = 5
-result = a * b + c
+# a = -3
+# b = -8
+# c = -2
+# n = 1
+# result = a
+# result = a * b + c
 
-while 1 <= n <= 9:
-    n += 1
-    for i in result:
-        result = i * b * c
+# if n != 1:
+#     for i in range(0, n - 2):
+#         result = result * b + c
+#     print(result)
 
-print(result)
+# else:
+#     print(a)
+
+
+# 1270
+# n = 35
+# result = 0
+
+# for i in range(1, n + 1):
+#     if i % 10 == 1:
+#         result += 1
+
+# print(result)
+
+
+# 1271
+# n = 5
+# list = [3, 1, 29, 31, 21]
+# list.sort()
+# list.reverse()
+# max = list[0]
+# print(max)
+
+
+# 1272
+# n = int(1)
+# m = int(2)
+
+# if n % 2 == 0:
+#     result = n/2 * 10
+
+# else:
+#     result = (n + 1)/2
+
+# if m % 2 == 0:
+#     result2 = m/2*10
+
+# else:
+#     result2 = (m + 1)/2
+
+# print(int(result) + int(result2))
+
+
+# 1273
+# n = 6
+
+# for i in range(1, n + 1):
+#     if n % i == 0:
+#         result = i
+#         print(result, end=' ')
+
+
+# 1274
+# for 결과값을 list[] 에 추가 / append(i)
+# n = 7453
+# list = []
+
+# for i in range(1, n+1):
+#     if n % i == 0:
+#         list.append(i)
+
+# if len(list) == 2:
+#     print("prime")
+# else:
+#     print("not prime")
+
+
+# 1275
+# n = 3
+# k = 3
+# result = n ** k
+# print(result)
+
+
+# 1276
+# n = 5
+# result = 1
+
+# for i in range(1, n + 1):
+#     result *= i
+
+# print(result)
+
+
+# 1277
+# n = 7
+# list = [2, 4, 7, 3, 1, 2, 5]
+
+# min = list[0]
+
+# mid = (len(list) - 1)/2
+# mid2 = int(mid)
+
+# max = len(list)-1
+# max1 = int(max)
+
+# print(list[0], list[mid2], list[max1])
+
+
+# 1278
+# n = str(932)
+# print(len(n))
+
+
+# 1279
+# a = 5
+# b = 7
+# list = []
+# sum1 = 0
+# sum2 = 0
+
+# for i in range(a, b + 1):
+#     list.append(i)
+
+# for i in list:
+#     if i % 2 == 0:
+#         sum1 += -i
+
+#     else:
+#         sum2 += i
+
+
+# print(sum1+sum2)
+
+
+# 1280
+# a = 5
+# b = 7
+# list = []
+# list2 = []
+# sum1 = 0
+# sum2 = 0
+
+# for i in range(a, b+1):
+#     list.append(i)
+
+# for i in list:
+#     if i % 2 == 0:
+#         sum1 += -i
+#         list2.append('-'+str(i))
+#         print('-'+str(i), end='')
+
+#     else:
+#         sum2 += i
+#         list2.append('+'+str(i))
+#         print('+'+str(i), end='')
+
+# result = sum1 + sum2
+# print('=' + str(result))
+
+
+# 1281
+# a = 5
+# b = 7
+# list = []
+# list2 = []
+# sum1 = 0
+# sum2 = 0
+
+# for i in range(a, b + 1):
+#     list.append(i)
+
+# for i in list:
+#     if i % 2 == 0:
+#         sum1 += -i
+#         list2.append(i)
+#         print('-'+str(i), end='')
+
+#     elif a == i:
+#         sum2 += i
+#         list2.append(-i)
+#         print(str(i), end='')
+
+#     else:
+#         sum2 += i
+#         list2.append(-i)
+#         print('+'+str(i), end='')
+
+# result = sum1 + sum2
+# print('=' + str(result))
+
+
+# 1283
+a = 10000
+b = 4
+list = [10, -10, 5, -5]
+list2 = []
+seed = a
+sum = 0
+abs = 0
+
+for i in list:
+    if i > 0:
+        sum = seed + (seed * (i/100))
+        print(sum)
+    else:
+        sum = seed - (seed*(-i/100))
+        print(sum)
+
+print(round())
