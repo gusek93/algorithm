@@ -365,20 +365,78 @@
 
 
 # 1283
-a = 10000
-b = 4
-list = [10, -10, 5, -5]
-list2 = []
-seed = a
-sum = 0
-abs = 0
+# a = 10000
+# b = 4
+# list = [10, -10, 5, -5]
+# seed = a
 
-for i in list:
-    if i > 0:
-        sum = seed + (seed * (i/100))
-        print(sum)
-    else:
-        sum = seed - (seed*(-i/100))
-        print(sum)
 
-print(round())
+# for i in list:
+#     if i > 0:
+#         seed = seed + (seed * (i/100))
+#     else:
+#         seed = seed - (seed*(-i/100))
+
+# print(round(seed - a))
+# if seed > a:
+#     print('good')
+
+# elif seed == a:
+#     print('same')
+
+# else:
+#     print('bad')
+
+
+# 1284
+# 값의 범위를 잘 확인 하자(약수를 곱해서 소수가 될수 있는 경우의 수 )
+# n = 8
+# list = []
+
+# # 약수
+# for i in range(1, n + 1):
+#     if n % i == 0:
+#         list.append(i)
+
+# if len(list) == 4 and n % 2 != 0:
+#     print(list[1], list[2])
+
+# elif n == 6:
+#     print(list[1], list[2])
+
+# else:
+#     print('wrong number')
+
+
+# 1285
+# import re
+# n = '1+2+3-4*5/6='
+# lenght = len(n)
+# a = 0
+
+# number = list(filter(str.isalnum, n))
+# char = list(re.sub(r'[0-9]+', '', n))
+
+# for i in number:
+#     for j in char:
+#         if j == '+':
+#             a = a + int(i)
+
+#         elif j == '-':
+#             a = a - int(i)
+
+#         elif j == '*':
+#             a = a*int(i)
+
+#         elif j == '/':
+#             a = a/int(i)
+
+#         else:
+#             break
+#     print(a)
+# print(a)
+
+
+n = '1+2+3-4*5/6='
+
+for i in range(1, len(n)+1):
