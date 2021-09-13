@@ -437,7 +437,129 @@
 # print(a)
 
 
-n = '1+2+3-4*5/6='
+# n = '1+2+3-4*5/6='
+# lastIndex = 0
+# symbol = ''
+# isFirst = True
+# result = 0
+# lastSymbol = ''
+# lastIndex = 0
 
-for i in range(1, len(n)+1):
-    print()
+# for i in range(0, len(n)):
+#     if n[i] in ('+', '-', '*', '/', '='):
+#         symbol = n[i]
+#         number = int(n[lastIndex:i])
+#         lastIndex = i+1
+#         print(lastIndex)
+
+#         if isFirst:
+#             isFirst = False
+#             result += int(number)
+#             lastNumber = number
+#             lastSymbol = symbol
+#             continue
+
+#         if lastSymbol == '+':
+#             result += number
+#             result = int(result)
+#         elif lastSymbol == '-':
+#             result -= number
+#             result = int(result)
+#         elif lastSymbol == '*':
+#             result *= number
+#             result = int(result)
+#         elif lastSymbol == '/':
+#             result /= number
+#             result = int(result)
+
+# ​
+# print(int(result))
+
+
+# 1286
+# a = int(3)
+# b = int(7)
+# c = int(-4)
+# d = int(-6)
+# e = int(5)
+
+# list = [a, b, c, d, e]
+# list.sort()
+# print(list[4])
+# print(list[0])
+
+
+# 1287
+# n = int(2)
+
+# for i in range(1, 9+1):
+#     print('*' * (n*i))
+
+
+# 1675
+# password = 'abchu wuxvw euxwxv'
+
+# for i in password:
+#     result = ord(i) - 3
+
+#     if ord(i) == 97:
+#         result = ord('x')
+
+#     elif ord(i) == 98:
+
+#         result = ord('y')
+
+#     elif ord(i) == 99:
+
+#         result = ord('z')
+
+#     elif ord(i) == 32:
+#         result = ord(' ')
+
+#     print(chr(result), end='')
+
+
+# 1294
+# password = 'xyzer trust brutus'
+
+# for i in password:
+#     result = ord(i) + 3
+
+#     if ord(i) == 120:
+#         result = ord('a')
+
+#     elif ord(i) == 121:
+
+#         result = ord('b')
+
+#     elif ord(i) == 122:
+
+#         result = ord('c')
+
+#     elif ord(i) == 32:
+#         result = ord(' ')
+
+#     print(chr(result), end='')
+
+
+# 1295
+# input = 'CodeChallenge2014withMSP'
+
+# for i in input:
+#     if 65 <= ord(i) <= 90:
+#         result = chr(ord(i) + 32)
+#         print(result, end='')
+
+#     elif 97 <= ord(i) <= 122:
+#         result = chr(ord(i) - 32)
+#         print(result, end='')
+
+#     else:
+#         result = str(i)
+#         print(result, end='')
+
+# print(result, end='')
+
+# swapcase() 함수는 대문자를 소문자로 소문자를 대문자로 변경
+# string = 'CodeChallenge2014withMSP'
+# print(string.swapcase())
