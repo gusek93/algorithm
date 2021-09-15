@@ -184,3 +184,66 @@
 
 
 # 1369
+# n = int(5)
+# k = int(1)
+
+# for i in range(1, n + 1):
+#     print('*', end='')
+# print()
+
+# for i in range(1, n + 1):
+
+#     for j in range(1, n+1):
+#         if i == 0 or i == n or j == 0 or j == n:
+#             print('*', end='')
+
+#         elif (j == n-i+(k+1)) or (j == n-i+(k-2)) or (j == n-i+(k-5)) or (j == n-i+(k-8)) or (j == n-i+(k-11)):
+#             print('*', end='')
+
+#         else:
+#             print(' ', end='')
+#     print()
+
+# if n > 1:
+#     for i in range(1, n+1):
+#         print('*', end='')
+#     print()
+
+
+# 역시 어려웠다 조건을 맞추기
+# n = int(5)
+# k = int(1)
+
+# for i in range(1, n + 1):
+#     for j in range(1, n + 1):
+#         # 정사각형을 만드는 곳
+#         if i == 1 or i == n or j == 1 or j == n:
+#             print('*', end='')
+#         # 빗금 치는 곳
+#         elif (i + j - 1) % k == 0:
+#             print('*', end='')
+
+#         else:
+#             print(' ', end='')
+
+#     print()
+
+
+# 1370
+# h = 3
+# r = 3
+# n = 0
+# while n < r:
+#     n += 1
+#     for i in range(1, h+1):
+#         for j in range(1, i):
+#             print(' ', end='')
+#         print('*')
+
+#     for i in range(h-1, 0, -1):
+#         for j in range(1, i):
+#             print(' ', end='')
+#         print('*')
+
+
+# 1371
