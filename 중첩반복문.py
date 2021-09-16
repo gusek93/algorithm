@@ -247,3 +247,52 @@
 
 
 # 1371
+# 마름모 별 출력 어렵..
+# n = int(5)
+
+# for i in range(0, n):
+#     for j in range(n-i-1, 0, -1):
+#         print(' ', end='')
+#     print('*', end='')
+
+#     for j in range(0, i*2):
+#         print(' ', end='')
+#     print('*')
+
+
+# for i in range(0, n):
+#     for j in range(0, i):
+#         print(' ', end='')
+#     print('*', end='')
+
+#     for j in range((n-i-1)*2, 0, -1):
+#         print(' ', end='')
+#     print('*')
+
+
+# 1378
+# n = int(5)
+# s = 0
+# result = 0
+# for i in range(1, n+1):
+#     s += i
+#     result += s
+
+# print(result)
+
+
+# 1380
+# k = int(5)
+
+# for i in range(1, 6+1):
+#     for j in range(1, 6+1):
+#         if i+j == k:
+#             print(i, j)
+
+
+# 1382
+for i in range(1, 10):
+    for j in range(2, 6):
+        print('%d x %d = %2d' % (j, i, i*j), end='')
+        print('\t', end='')
+    print()
