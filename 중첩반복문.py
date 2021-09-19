@@ -291,8 +291,29 @@
 
 
 # 1382
-for i in range(1, 10):
-    for j in range(2, 6):
-        print('%d x %d = %2d' % (j, i, i*j), end='')
-        print('\t', end='')
+# for i in range(1, 10):
+#     for j in range(2, 6):
+#         print('%d x %d = %2d' % (j, i, i*j), end='')
+#         print('\t', end='')
+#     print()
+
+
+# 1677
+n = int(4)
+m = int(3)
+
+for i in range(0, m):
+    for j in range(0, n):
+        if (i == 0 or i == m) and (j == 0 or j == n):
+            print('+', end='')
+
+        elif j == 0 or j == n:
+            print('|', end='')
+
+        elif i == 0 or i == m:
+            print('-', end='')
+
+        else:
+            print(' ', end='')
+
     print()
