@@ -77,21 +77,89 @@
 
 
 # 1411
-card = [10, 3, 4, 1, 10, 2, 6, 7, 5, 9]
-cardlist = []
-miss = []
+# card = [10, 3, 4, 1, 10, 2, 6, 7, 5, 9]
+# cardlist = []
+# miss = []
 
-for i in card:
-    cardlist.append(i)
-
-cardlist.sort()
+# for i in range(1, card+1):
+#     cardlist.append(i)
 
 
-for j in range(1, len(cardlist)+1):
-    miss.append(j)
+# for i in range(0, card-1):
+#     num = int(card)
+#     miss.append(i)
 
 
-for i in miss:
-    cardlist.remove(i)
+# for n in miss:
+#     cardlist.remove(n)
 
-print(cardlist[0])
+# print(cardlist[0])
+
+
+# 1412
+# 노가다 성으로 풀수 있지만 for 문을 이용해서 풀어본다.
+# n = 'oh! my god!'
+
+# for i in n:
+#     resulta = i.count('a')
+#     resultb = i.count('b')
+#     resultc = i.count('c')
+#     resultd = i.count('d')
+#     resulte = i.count('e')
+#     # print(i.count('b'))
+#     # print(i.count('c'))
+#     # print(i.count('d'))
+#     # print(i.count('e'))
+#     # print(i.count('f'))
+#     # print(i.count('g'))
+#     # print(i.count('h'))
+#     # print(i.count('i'))
+
+# print('a:'+str(resulta))
+# print('b:'+str(resultb))
+# print(resultc)
+# print(resultd)
+# print(resulte)
+
+
+# str = 'oh! my god!'
+# li = [0 for _ in range(26)]
+
+# for i in str:
+#     if i >= 'a' and i <= 'z':
+#         li[ord(i)-97] += 1
+
+# for i in range(26):
+#     print("%c:%d" % (chr(i+97), li[i]))
+
+
+# 1416
+# n = 7
+# print(int(bin(n)[2:]))
+
+
+# 1420
+# n = int(5)
+# hash_record = {}
+
+# for i in range(5):
+#     name, score = 'minsu 78'.split()
+#     hash_record[name] = int(score)
+
+# data = sorted(hash_record.items(), lambda t: t[1], reverse=True)
+# print(data[2][0])
+
+
+# 1425
+# 표현 에러라는데 에러는 코드 문제는 아닌거 같은데..
+# n = int(9)
+# h = int(6)
+# count = 0
+
+# numlist = [160, 165, 164, 165, 150, 165, 168, 145, 170]
+# numlist.sort()
+# for i in numlist:
+#     count += 1
+#     print(i, end=' ')
+#     if count == h:
+#         print()
