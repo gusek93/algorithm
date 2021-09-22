@@ -163,3 +163,42 @@
 #     print(i, end=' ')
 #     if count == h:
 #         print()
+
+
+# 1430
+# 메모리 초과로 해결 안됌
+# n = int(5)
+# nlist = [2, 52, 23, 55, 100]
+
+# m = int(4)
+# mlist = [5, 2, 55, 99]
+
+# for i in mlist:
+#     if i in nlist:
+#         print(1, end=' ')
+#     else:
+#         print(0, end=' ')
+
+
+# 람다식으로 푸는 방법
+# len = int(input())
+# num1 = list(map(int,input().split()))
+# len = int(input())
+# num2 = list(map(int,input().split()))
+# ans = list(map(lambda n : n in num1, num2))
+# for _ in range(0, len):
+#     print("%d"%ans[_], end=" ")
+
+
+# 1440
+# n = int(5)
+# k = [1, 2, 3, 2, 1]
+
+# for i in range(n):
+#     print(str(i+1)+': ', end='')
+#     for j in range(n):
+#         if i != j:
+#             print("> " if k[i] > k[j] else "= " if k[i]
+#                   == k[j] else "< ", end='')
+
+#     print()
