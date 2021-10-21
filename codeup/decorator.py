@@ -1,14 +1,32 @@
-def decorator_function(original_function):  # 1
-    def wrapper_function():  # 5
-        return original_function()  # 7
+# def decorator_function(original_function): 
+#     def wrapper_function(*args, **kwargs): 
+#         print("실행 전입니다.")
+#         original_function(*args, **kwargs)
+#         print("실행 끝났습니다.") 
 
-    return wrapper_function  # 6
+#     return wrapper_function 
 
-@decorator_function
-def display():  # 2
-    print('display 함수가 실행됐습니다.')  # 8
+# @decorator_function
+# def display(msg):  
+#     print(msg)  
 
 
-#decorated_display = decorator_function(display)  # 3
+# #decorated_display = decorator_function(display)  
 
-display() # 4
+# display("hi")
+
+
+
+def display(**msg):
+    for key, value in msg.items():
+        if 'python' in msg.keys():
+            print('성공')
+            
+        else:
+            print("{0} is {1}".format(key,value))
+ 
+
+display(name='JS')
+display(python='good')
+
+
