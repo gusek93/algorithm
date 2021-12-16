@@ -1,4 +1,5 @@
 # 기초를 다지자
+
 # for i in range(1,100+1):
 #     print(i,end=' ')
 
@@ -108,14 +109,66 @@
 
 # print(count)
 
-n = input()
-number = map(int, input().split())
+# n = input()
+# number = map(int, input().split())
 
-numberlist = []
+# numberlist = []
 
-for i in number:
-    numberlist.append(i)
+# for i in number:
+#     numberlist.append(i)
 
-numberlist.sort()
-print(numberlist[-1])
+# numberlist.sort()
+# print(numberlist[-1])
 
+
+# jonbob = map(int, input().split())
+# sumlist = []
+
+# for i in jonbob:
+#     if i % 2 == 0:
+#         result1 = (i//2)*10
+#         sumlist.append(result1)
+
+#     elif i % 2 != 0:
+#         result2 = (i//2)+1
+#         sumlist.append(result2)
+
+# sum = 0
+# for j in sumlist:
+#     sum += j
+
+# print(sum)
+
+# n = int(input())
+
+# for i in range(1,n+1):
+#     if n % i == 0:
+#         print(i, end=' ')
+
+# n = int(input())
+# result = 0
+
+# for i in range(2,n):
+#     if n % i == 0 :
+#         result = 1
+
+# if result == 0 :
+#     print('prime')
+
+# else:
+#     print('not prime')
+
+
+# n,k = map(int, input().split())
+
+# result = n**k
+
+# print(result)
+
+# n = int(input())
+# result = 1
+
+# for i in range(1,n+1):
+#     result *= i
+
+# print(result)
