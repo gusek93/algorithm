@@ -172,3 +172,67 @@
 #     result *= i
 
 # print(result)
+
+# n = int(input())
+# nlist = input().split()
+
+# numberList = nlist
+
+# #print(numberList[0],numberList[n//2],numberList[n-1])
+
+# for i in range(0,n):
+#     if i == 0:
+#         print(numberList[i], end=' ')
+#     elif n // 2 == i:
+#         print(numberList[i//2], end=' ')
+#     elif n-1 == i:
+#         print(numberList[n-1], end=' ')
+
+
+# n = input()
+
+# print(len(n))
+
+
+# a,b = map(int, input().split())
+
+# result1 = 0
+# result2 = 0
+
+# for i in range(a,b+1):
+#     if i % 2 == 0:
+#         result1 -= i
+#     elif i % 2 != 0:
+#         result2 += i
+
+# print(result2+result1)
+
+
+a,b = map(int,input().split())
+addNumber = 0
+subtractionNumber = 0
+numberList = []
+
+
+for i in range(a,b+1):
+    if i % 2 != 0:
+        addNumber += i
+
+    elif i % 2 == 0:
+        subtractionNumber -= i
+
+for j in range(a,b+1):
+    if j % 2 != 0:
+        numberList.append(f'+{j}')
+    
+    elif j % 2 == 0:
+        numberList.append(f'-{j}')
+
+
+for i in numberList:
+    if numberList[0] == i :
+        print(int(i), end='')
+    else:
+        print(i,end='')
+
+print(f'={addNumber+subtractionNumber}')
