@@ -208,31 +208,221 @@
 # print(result2+result1)
 
 
-a,b = map(int,input().split())
-addNumber = 0
-subtractionNumber = 0
-numberList = []
+# a,b = map(int,input().split())
+# addNumber = 0
+# subtractionNumber = 0
+# numberList = []
 
 
-for i in range(a,b+1):
-    if i % 2 != 0:
-        addNumber += i
+# for i in range(a,b+1):
+#     if i % 2 != 0:
+#         addNumber += i
 
-    elif i % 2 == 0:
-        subtractionNumber -= i
+#     elif i % 2 == 0:
+#         subtractionNumber -= i
 
-for j in range(a,b+1):
-    if j % 2 != 0:
-        numberList.append(f'+{j}')
+# for j in range(a,b+1):
+#     if j % 2 != 0:
+#         numberList.append(f'+{j}')
     
-    elif j % 2 == 0:
-        numberList.append(f'-{j}')
+#     elif j % 2 == 0:
+#         numberList.append(f'-{j}')
 
 
-for i in numberList:
-    if numberList[0] == i :
-        print(int(i), end='')
-    else:
-        print(i,end='')
+# for i in numberList:
+#     if numberList[0] == i :
+#         print(int(i), end='')
+#     else:
+#         print(i,end='')
 
-print(f'={addNumber+subtractionNumber}')
+# print(f'={addNumber+subtractionNumber}')
+
+#import math
+
+# n = int(input())
+
+# #squareRoot = math.floor(math.sqrt(n))
+# #print(squareRoot)
+
+# for i in range(1,n+1):
+#     # if math.sqrt(i) == squareRoot:
+#     #     result = n-i
+#     if i*i <= n:
+#         result = i
+
+
+# print(n-result*result, result)
+
+
+# money = int(input())
+# date = int(input())
+# persent = map(int, input().split())
+# money = int(10000)
+# date = int(1)
+# persent = [10,-10,5,-5]
+
+# originMoney = money
+
+
+# for i in persent:
+#     money += money*i/100
+
+# #print(money)
+
+
+# if money > originMoney:
+#     print(round(money-originMoney))
+#     print('good')
+
+# elif money < originMoney:
+#     print(round(money-originMoney))
+#     print('bad')
+
+# elif money == originMoney:
+#     print(round(money-originMoney))
+    # print('same')
+
+# n = int(input())
+
+# measureList = []
+
+# for i in range(1,n+1):
+#     if n % i == 0:
+#         measureList.append(i)
+
+# if len(measureList) == 4 and n % 2 != 0:
+#     print(measureList[1],measureList[2])
+
+# elif n == 6:
+#     print(measureList[1], measureList[2])
+
+# else:
+#     print('wrong number')
+
+
+
+# n = '3+3-3*3/3='
+# numberList = []
+# count = 0
+# sum = 0
+# minus = 0
+# multiply = 0
+# divide = 0
+# result = 0
+
+# for i in n:
+#     numberList.append(i)
+
+# for j in numberList:
+#     if j == '+':
+#         result += result+int(numberList[count-1])
+ 
+    
+#     elif j == '-':
+#         result += result-int(numberList[count-1])
+     
+    # elif j == '*':
+    #     multiply *= int(numberList[count-1])
+    #     result
+    #     print(multiply)
+
+    # elif j == '/':
+    #     divide /= int(numberList[count-1])
+    #     print(divide)
+
+#     elif j == '=':
+#         break
+
+#     count += 1
+
+
+# print(result)
+
+
+# a = int(input())
+# b = int(input())
+# c = int(input())
+# d = int(input())
+# e = int(input())
+
+# numberList = [a,b,c,d,e]
+
+# numberList.sort()
+
+# print(numberList[-1])
+# print(numberList[0])
+
+
+# n = int(input())
+
+# for i in range(1,9+1):
+#     print('*'*n*i)
+
+
+# string = input()
+
+# #transrate = ord(string)
+
+# #print(ord(string))
+
+
+# for i in string:
+#     if 96 < ord(i)+23 < 123 :
+#         print(chr(ord(i)+23),end='')
+    
+#     elif ord(i)+23 > 122:
+#         print(chr(ord(i)+23-122+97-1), end='')
+    
+#     elif ord(i) == 32:
+#         print(chr(ord(i)),end='')
+
+
+
+# string = input()
+
+# for i in string:
+#     if 96 < ord(i)-23 < 123:
+#         print(chr(ord(i)-23), end='')
+
+#     elif 32 < ord(i)-23 < 97:
+#         print(chr(ord(i)-23+26), end='')
+
+#     elif ord(i) == 32:
+#         print(chr(ord(i)), end='')
+
+# string = input()
+
+# for i in string:
+#     if 64 < ord(i) < 91:
+#         print(chr(ord(i)+32),end='')
+
+#     elif 96 < ord(i) < 123:
+#         print(chr(ord(i)-32),end='')
+
+#     else:
+#         print(i,end='')
+
+# x,y = map(int, input().split())
+
+# for i in range(x,y+1):
+#     for j in range(1,9+1):
+#         print(f'{i}*{j}={i*j}')
+
+
+# n = int(input())
+# reverse = []
+
+# for i in range(1,n+1):
+#     reverse.append(i)
+
+# reverse.reverse()
+
+# for j in reverse:
+#     print('*'*j)
+
+
+n = int(input())
+
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        print('*'*i*j)
